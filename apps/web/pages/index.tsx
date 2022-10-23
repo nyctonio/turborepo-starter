@@ -1,10 +1,13 @@
-import { Button } from "ui";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
 
-export default function Web() {
+const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Web</h1>
-      <Button />
+    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+
     </div>
   );
-}
+};
+
+export default Home;
