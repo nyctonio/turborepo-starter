@@ -29,6 +29,10 @@
       "prettier --write",
       "eslint --fix"
     ],
+    "packages/ui/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
     "*.json": [
       "prettier --write"
     ]
