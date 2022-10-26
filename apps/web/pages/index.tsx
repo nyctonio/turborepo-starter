@@ -10,4 +10,14 @@ const Home: NextPage = () => {
   );
 };
 
+// server side rendering
+export async function getServerSideProps() {
+  const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${process.env.API_KEY}`);
+  const data = await res.json();
+  return {
+    props: {
+      data,
+    },
+  };
+}
 export default Home;

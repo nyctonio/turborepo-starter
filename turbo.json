@@ -17,5 +17,13 @@
     "dev": {
       "cache": false
     }
-  }
+  },
+  "globalDependencies": [
+    ".env"
+  ],
+  "globalEnv": [
+    "PORT",
+    "DATABASE_URL",
+    "NEXT_PUBLIC_API_URL"
+  ]
 }
