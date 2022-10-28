@@ -1,7 +1,8 @@
 import express from 'express';
 const app = express();
 import dotenv from 'dotenv';
-dotenv.config({ path: __dirname + '/../../../.env' });
+import { Request, Response, NextFunction } from 'express';
+dotenv.config();
 const port = process.env.PORT || 3004;
 app.use(express.json());
 app.use(express.static('public'));

@@ -2,20 +2,26 @@
   "name": "database",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pull": "dotenv -e '../../.env' --npx prisma db pull"
+    "generate": "prisma generate",
+    "db:push": "prisma db push",
+    "build": "prisma generate && tsc",
+    "dev": "prisma generate  && tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prisma": "^4.5.0"
+    "eslint": "^8.26.0",
+    "prisma": "^4.5.0",
+    "typescript": "^4.8.4",
+    "tsconfig": "workspace:*",
+    "eslint-config-custom": "workspace:*"
   },
   "dependencies": {
-    "@prisma/client": "^4.5.0",
-    "dotenv": "^16.0.3",
-    "dotenv-cli": "^6.0.0"
+    "@prisma/client": "^4.5.0"
   }
 }

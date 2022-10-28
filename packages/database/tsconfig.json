@@ -1,0 +1,11 @@
+{
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "lib": ["ES2021"],
+    "module": "commonjs",
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "exclude": ["dist", "generated", "node_modules"]
+}
