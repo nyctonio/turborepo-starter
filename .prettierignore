@@ -4,3 +4,4 @@ node_modules
 .swc
 dist
 .husky
+generated
